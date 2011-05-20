@@ -1,5 +1,5 @@
 Project Euler
-============
+=============
 
 This repository contains solutions to various problems on [Project Euler](http://projecteuler.net). They are mainly written in Python, but some problems may have been solved partially by hand or on a simple calculator.
 
