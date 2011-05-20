@@ -1,0 +1,7 @@
+Project Euler
+============
+
+This repository contains solutions to various problems on [Project Euler](http://projecteuler.net). They are mainly written in Python, but some problems may have been solved partially by hand or on a simple calculator.
+
+The goal is to solve the maximum number of problems with the constraint that every solution should run in under 10s, preferably under 1s, using [CPython](http://python.org/) or [PyPy](http://pypy.org), whichever is faster on the particular script. A secondary goal is to create a reusable module of common functions used across multiple solutions (src/euler.py).
+
