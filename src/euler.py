@@ -8,7 +8,7 @@ def gcd(a, b):
 def lcm(a, b):
   return (a*b) / gcd(a, b)
 
-def primes(limit, sieve = []):
+def primes(limit):
   if limit <= 2:
     if limit == 2: yield 2
     return
@@ -116,7 +116,7 @@ def n_pow_m_mod_k(n, m, k):
   if m == 0:
     return 1
   if m % 2:
-    return (n % k) * ((n_pow_m_mod_k(n, (m-1)/2, k) ** 2) % k)
+    return ((n % k) * ((n_pow_m_mod_k(n, (m-1)/2, k) ** 2) % k)) % k
   else:
     return (n_pow_m_mod_k(n, m/2, k)**2) % k
 
