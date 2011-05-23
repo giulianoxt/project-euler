@@ -13,11 +13,9 @@ def num_digits(n):
   return int(f + 1)
 
 
-st, lim = 100, 666
+st, lim = 100, 166
 while True:
-  for k in xrange(st, lim+1):
-    nd_k = num_digits(k)
-    n = 10**nd_k + k
+  for n in xrange(st, lim+1):
     n_str = sorted(str(n))
     
     if all(same(n_str, str(m*n)) for m in xrange(6,1,-1)):
