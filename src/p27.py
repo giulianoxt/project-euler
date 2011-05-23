@@ -12,7 +12,7 @@ for b in primes(1000):
       if is_prime(x):
         cnt += 1
       else:
-	break
+        break
     
     if cnt > m:
       m = cnt
