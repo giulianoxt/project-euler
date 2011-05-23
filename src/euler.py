@@ -45,7 +45,7 @@ def product(l):
   return reduce(lambda x,y: x*y, l, 1)
 
 def is_prime(n):
-  if n == 1: return False
+  if n <= 1: return False
   if n < 4: return True
   if not n % 2: return False
   if n < 9: return True
