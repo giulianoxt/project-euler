@@ -1,4 +1,4 @@
-from math import ceil, floor, sqrt
+from math import *
 
 def gcd(a, b):
   if a < b: return gcd(b, a)
@@ -120,4 +120,9 @@ def n_pow_m_mod_k(n, m, k):
   else:
     return (n_pow_m_mod_k(n, m/2, k)**2) % k
 
+def num_digits(n):
+  if n:
+   return int(floor(log10(n))+1)
+  else:
+   return 1
 
